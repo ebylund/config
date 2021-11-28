@@ -1,0 +1,159 @@
+{
+  "workbench.tree.indent": 20,
+
+  ////////////////
+  // VIM CONFIG //
+  ////////////////
+
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotionMarkerBackgroundColor": "#3177c2",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#fff",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#fff",
+  "vim.leader": "<space>",
+  "vim.surround": true,
+  "vim.insertModeKeyBindings": [
+    { "before": ["j","k"], "after": ["<Esc>"]},
+  ],
+  "vim.normalModeKeyBindings": [
+    // { "before": ["<C-h>"], "after": ["^"]},
+    // { "before": ["<C-l>"], "after": ["$"]},
+    { "before": ["<leader>", "o"], "after": ["o", "<Esc>", "k"]},
+    // { "before": ["<leader>", "o"], "after": [":<C-u>call append(line('.'), repeat([''], v:count1))<CR>"] },
+    { "before": ["<leader>", "\""], "after": ["c", "s", "'", "\""] },
+    { "before": ["<leader>", "'"], "after": ["c", "s", "\"", "'"] },
+    { "before": ["<leader>", "h"], "after": ["^"]},
+    { "before": ["<leader>", "l"], "after": ["$"]},
+  ],
+
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<leader>", ";"],     "commands": [ "workbench.action.showCommands" ] },
+    { "before": ["<leader>", "v"],     "after": [ "v", "i", "w"] },
+    { "before": ["<leader>", "}"],     "after": [ "v", "i", "w", "S", "}"] },
+    { "before": ["<leader>", "{"],     "after": [ "v", "i", "w", "S", "{"] },
+    { "before": ["<leader>", "]"],     "after": [ "v", "i", "w", "S", "]"] },
+    { "before": ["<leader>", "["],     "after": [ "v", "i", "w", "S", "["] },
+    { "before": ["<leader>", "\""],     "after": [ "v", "i", "w", "S", "\""] },
+    { "before": ["<leader>", "'"],     "after": [ "v", "i", "w", "S", "'"] },
+    // { "before": ["<leader>", "s"],     "commands": [":%s<C-r><C-w>/"]}
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "after": [ "B","f","_","x","~",";","x","~",";","x","~",";","x","~",";","x","~" ]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+  ],
+
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["<leader>", "s"], "commands": [":%s/"]},
+    { "before": ["<leader>", "}"], "after": ["S", "}"] },
+    { "before": ["<leader>", "{"], "after": ["S", "{"] },
+    { "before": ["<leader>", "]"], "after": ["S", "]"] },
+    { "before": ["<leader>", "["], "after": ["S", "["] },
+    { "before": ["<leader>", "'"], "after": ["S", "'"] },
+    { "before": ["<leader>", "\""], "after": ["S", "\""] },
+  ],
+
+  //   :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+  ////////////////////
+  // END VIM CONFIG //
+  ////////////////////
+
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "files.autoSave": "afterDelay",
+  "breadcrumbs.enabled": true,
+  "workbench.sideBar.location": "left",
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "bookmarks.navigateThroughAllFiles": true,
+  "workbench.colorCustomizations": {},
+  "workbench.editor.labelFormat": "short",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "terminal.integrated.tabs.enabled": true,
+  "editor.largeFileOptimizations": false,
+}
