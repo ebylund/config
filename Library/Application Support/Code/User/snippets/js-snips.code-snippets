@@ -1,0 +1,82 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Test": {
+		"prefix": "tst", 
+		"body": [
+			"import { expect } from 'chai'\n\ndescribe('$1', () => {\n\tit('$2', () => {})\n})"
+		],
+		"description": "Create a standard test file"
+	},
+	"expression function": {
+		"scope": "javascript, typescript",
+		"prefix": "fun",
+		"body": [
+			"($1) => {$0}",
+		],
+		"description": "expression function snippet"
+	},
+	"expression function async": {
+		"scope": "javascript, typescript",
+		"prefix": "funa",
+		"body": [
+			"async ($1) => {$0}",
+		],
+		"description": "expression function snippet"
+	},
+	"write to stdout": {
+		"scope": "javascript, typescript",
+		"prefix": "wri",
+		"body": [
+			"process.stdout.write(`\\r$0`)"
+		],
+		"description": "snippet for overwriting to stdout without newline"
+	},
+	"captured expression function": {
+		"scope": "javascript, typescript",
+		"prefix": "fund",
+		"body": [
+			"const $1 = ($2) => {$0}",
+		],
+		"description": "expression function snippet that is captured in const"
+	},
+	"console log wrapper": {
+		"scope": "javascript, typescript",
+		"prefix": "lg",
+		"body": [
+			"console.log('$1', $0$CLIPBOARD)",
+		],
+		"description": "expression function snippet that is captured in const"
+	},
+	"JSON.stringify wrapper": {
+		"scope": "javascript, typescript",
+		"prefix": "jsow",
+		"body": [
+			"JSON.stringify($CLIPBOARD$3, null$2, 2$1)$0",
+		],
+		"description": "expression function snippet that is captured in const"
+	},
+	"JSON.stringify snip": {
+		"scope": "javascript, typescript",
+		"prefix": "jsos",
+		"body": [
+			"JSON.stringify($3, null$2, 2$1)$0",
+		],
+		"description": "expression function snippet that is captured in const"
+	}
+
+}
