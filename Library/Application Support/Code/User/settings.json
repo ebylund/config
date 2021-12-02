@@ -131,11 +131,10 @@
       "value": "#42b883"
     }
   ],
-  "files.autoSave": "afterDelay",
   "breadcrumbs.enabled": true,
   "workbench.sideBar.location": "left",
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Monokai Pro",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
@@ -156,4 +155,6 @@
   "editor.wordWrap": "off",
   "terminal.integrated.tabs.enabled": true,
   "editor.largeFileOptimizations": false,
+  "window.zoomLevel": 1,
+  "files.autoSave": "afterDelay",
 }
