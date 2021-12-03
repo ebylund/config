@@ -11,7 +11,7 @@ export AWS_CA_BUNDLE="$HOME/src/ps/certs/zscaler.pem"
 
 plugins=(
   git
-  osx
+  macos
   #dotenv
   wd
   zsh-autosuggestions
