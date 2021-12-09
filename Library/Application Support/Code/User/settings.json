@@ -155,6 +155,5 @@
   "editor.wordWrap": "off",
   "terminal.integrated.tabs.enabled": true,
   "editor.largeFileOptimizations": false,
-  "window.zoomLevel": 1,
   "files.autoSave": "afterDelay",
 }
