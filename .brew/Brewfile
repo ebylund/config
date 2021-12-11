@@ -9,6 +9,7 @@ brew "zsh-completions"
 cask "1password"
 cask "alfred"
 cask "iterm2"
+cask "obsidian"
 cask "visual-studio-code"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
